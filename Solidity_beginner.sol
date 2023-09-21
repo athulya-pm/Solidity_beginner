@@ -18,9 +18,9 @@ pragma solidity 0.8.18;
 contract MyToken {
 
 // public variables here
-    string public name;
-    string public symbol;
-    uint256 public totalSupply;
+    string public name="JACKEY";
+    string public symbol="JCK";
+    uint256 public totalSupply=0;
 
  // mapping variable here
    mapping(address => uint) public balances;
