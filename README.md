@@ -16,9 +16,9 @@ This is a Solidity smart contract that implements a basic token called MyToken (
 
 # Usage
 
-tokenName: A public variable that represents the name of the token. In this contract, it is set to "name".
+tokenName: A public variable that represents the name of the token. In this contract, it is set to "tname".
 
-tokenAbbrv: A public variable that represents the abbreviation of the token. In this contract, it is set to "symbol".
+tokenAbbrv: A public variable that represents the abbreviation of the token. In this contract, it is set to "tabbr".
 
 totalSupply: A public variable that stores the total supply of the token. Initially set to 0, it increases when tokens are minted and decreases when tokens are burned.
 
@@ -26,7 +26,7 @@ balances: A mapping that associates addresses with token balances. Each address'
 
 mint: A function that mints new tokens. It takes an address (_recipient) and a value (_value) as parameters. It increases the total supply by the specified value and adds that value to the balance of the specified address.
 
-burn: A function that burns existing tokens. It takes an address (_account) and a value (_value) as parameters. If the balance of the specified address is greater than or equal to the value, it deducts the value from the total supply and reduces the balance of the specified address.
+burn: A function that burns existing tokens. It takes an address (_recipient) and a value (_value) as parameters. If the balance of the specified address is greater than or equal to the value, it deducts the value from the total supply and reduces the balance of the specified address.
 
 Please note that this contract is a basic implementation and may require additional functionality and security measures for use in production environments.
 
